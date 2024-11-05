@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages {
+        stage('Example') {
+            steps {
+                script {
+                    // Use sh step to run shell commands
+                    sh 'ls -l'
+                }
+            }
+        }
+    }
+}
